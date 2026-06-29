@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dossier joint à la candidature — Direction juridique et commande publique</title>
+<style>
+:root{
+  --navy:#092f4f;--navy2:#0d456f;--gold:#b48a43;--gold2:#d4b06d;
+  --bg:#f4f1eb;--paper:#ffffff;--ink:#172638;--muted:#5d6875;--line:#ded7ca;
+  --soft:#fbf8f1;--green:#11664b;--shadow:0 14px 35px rgba(9,47,79,.09)
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:86px} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit}.topbar{position:sticky;top:0;z-index:50;background:rgba(9,47,79,.98);border-bottom:3px solid var(--gold);color:#fff}.nav{max-width:1180px;margin:0 auto;padding:13px 22px 11px;display:grid;grid-template-columns:1fr;gap:10px;align-items:center}.brand{font-family:Georgia,serif;font-weight:800;letter-spacing:.2px;font-size:20px;text-align:center;line-height:1.2}.links{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}.links a{text-decoration:none;color:#fff;font-size:11px;text-transform:uppercase;font-weight:800;padding:7px 10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04)}.links a:hover{background:rgba(255,255,255,.14)}
+.hero{background:linear-gradient(135deg,#fff 0%,#f6efe2 100%);border-bottom:1px solid var(--line)}.wrap{max-width:1180px;margin:0 auto;padding:0 22px}.hero .wrap{padding-top:48px;padding-bottom:40px}.eyebrow{color:#9b6f29;text-transform:uppercase;font-weight:900;letter-spacing:.12em;font-size:13px;margin-bottom:10px}h1{font-family:Georgia,serif;color:var(--navy);font-size:46px;line-height:1.04;margin:0 0 12px}.subtitle{max-width:920px;font-size:18px;line-height:1.55;margin:0 0 22px;color:#263748}.meta{display:flex;gap:10px;flex-wrap:wrap}.pill{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:10px 12px;font-size:13px;font-weight:800;color:var(--navy)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--navy);color:#fff;border:2px solid var(--navy);padding:10px 14px;font-weight:900;font-size:12px;text-transform:uppercase}.btn.alt{background:#fff;color:var(--navy);border-color:var(--gold)}.btn:hover{filter:brightness(.96)}.return-cards{margin:-6px 0 16px}.return-cards a{display:inline-flex;align-items:center;text-decoration:none;color:var(--navy);font-size:12px;font-weight:900;text-transform:uppercase;border:1px solid var(--line);background:#fff;padding:7px 10px}.return-cards a:hover{border-color:var(--gold);background:var(--soft)}
+main{padding:28px 0 60px}section{margin:0 0 34px;padding-top:28px;scroll-margin-top:86px}.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;border-bottom:2px solid var(--gold);padding-bottom:9px;margin-bottom:18px}h2{margin:0;font-size:23px;color:var(--navy);text-transform:uppercase;letter-spacing:.02em}.section-title span{color:var(--muted);font-size:13px;max-width:520px;text-align:right}.panel{background:var(--paper);box-shadow:var(--shadow);border:1px solid var(--line);padding:22px}.lead{font-size:16px;line-height:1.58;margin:0;color:#263748}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.box{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.04)}.box h3{margin:0 0 9px;color:var(--navy);font-size:16px;text-transform:uppercase}.box p,.box li{font-size:14px;line-height:1.45;color:#263748}.box ul{margin:0;padding-left:18px}.box p{margin:0 0 10px}
+.matrix{width:100%;border-collapse:collapse;background:#fff;box-shadow:var(--shadow);border:1px solid var(--line)}.matrix th{background:var(--navy);color:#fff;text-align:left;padding:12px;font-size:12px;text-transform:uppercase}.matrix td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px;line-height:1.42}.matrix td:first-child{font-weight:900;color:var(--navy);width:28%}.tag{display:inline-block;margin:2px 5px 2px 0;padding:4px 7px;background:var(--soft);border:1px solid var(--line);font-size:12px;font-weight:800;color:var(--navy)}
+.accordion{display:grid;gap:12px}.acc{background:#fff;border:1px solid var(--line);box-shadow:0 8px 20px rgba(0,0,0,.04)}.acc summary{cursor:pointer;list-style:none;padding:18px 20px;display:flex;justify-content:space-between;gap:16px;align-items:center;border-left:5px solid var(--gold)}.acc summary::-webkit-details-marker{display:none}.acc-title{font-weight:900;color:var(--navy);text-transform:uppercase;font-size:16px}.acc-sub{display:block;font-weight:400;text-transform:none;color:var(--muted);font-size:13px;margin-top:4px}.plus{font-size:22px;color:var(--gold);font-weight:900}.acc[open] .plus{transform:rotate(45deg)}.acc-body{border-top:1px solid var(--line);padding:20px;background:linear-gradient(180deg,#fff 0%,#fbf8f1 100%)}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini{background:#fff;border:1px solid var(--line);padding:15px}.mini h4{margin:0 0 8px;color:var(--navy);font-size:14px;text-transform:uppercase}.mini ul{margin:0;padding-left:18px}.mini li{font-size:14px;line-height:1.42;margin:5px 0}.mini p{font-size:14px;line-height:1.45;margin:0}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.t{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);padding:15px}.t strong{display:block;color:var(--navy);text-transform:uppercase;margin-bottom:8px}.t p{font-size:14px;line-height:1.4;margin:0;color:#263748}.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.doc{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.04)}.doc h3{margin:0 0 8px;color:var(--navy);font-size:16px;text-transform:uppercase}.doc p{margin:0 0 12px;font-size:14px;line-height:1.4;color:#263748}.note{border-left:5px solid var(--green);background:#eef7f3;padding:18px;margin:18px 0}.note p{margin:0;font-size:15px;line-height:1.52}.footer{background:var(--navy);color:#fff;padding:22px;text-align:center;font-size:12px;border-top:3px solid var(--gold)}
+.pdfbox{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}.pdfbox summary{cursor:pointer;color:var(--navy);font-weight:900;font-size:12px;text-transform:uppercase}.pdfbox iframe{width:100%;height:420px;border:1px solid var(--line);margin-top:10px;background:#fff}
+
+.reader-path{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:22px;align-items:stretch}
+.intro-card{background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);padding:22px;box-shadow:var(--shadow)}
+.intro-card h2{font-size:20px;margin:0 0 10px;color:var(--navy);text-transform:uppercase}.intro-card p{font-size:15.5px;line-height:1.55;margin:0;color:#263748}
+.keynav{display:grid;grid-template-columns:1fr 1fr;gap:12px}.keynav a{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);padding:15px;box-shadow:0 8px 18px rgba(0,0,0,.04);border-top:4px solid var(--gold);transition:.18s}.keynav a:hover{transform:translateY(-2px);box-shadow:0 14px 26px rgba(9,47,79,.12)}.keynav strong{display:block;color:var(--navy);font-size:14px;text-transform:uppercase;margin-bottom:6px}.keynav span{display:block;font-size:13px;line-height:1.35;color:#3b4a5a}
+.impact-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.impact{background:var(--soft);border:1px solid var(--line);padding:14px;text-align:center}.impact strong{display:block;color:var(--navy);font-size:13px;text-transform:uppercase}.impact span{display:block;color:#44515f;font-size:12.5px;line-height:1.3;margin-top:6px}
+.section-shell{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:18px}.section-shell > .lead{margin-bottom:14px}.compact-table td,.compact-table th{padding:11px 12px}.section-kicker{font-size:12px;text-transform:uppercase;color:#a9782d;font-weight:900;letter-spacing:.08em;margin-bottom:6px}
+.teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.teaser{background:var(--soft);border:1px solid var(--line);padding:14px}.teaser strong{display:block;color:var(--navy);font-size:13px;text-transform:uppercase;margin-bottom:6px}.teaser span{font-size:13px;line-height:1.35;color:#263748}
+.acc:not([open]){border-left:0}.acc:not([open]) summary{background:#fff}.acc[open]{border-color:#cdbb98}.acc[open] summary{background:linear-gradient(90deg,#fff 0%,#fbf8f1 100%)}
+
+
+.progress-wrap{position:absolute;left:0;right:0;bottom:-3px;height:3px;background:rgba(255,255,255,.10)}
+.progress-bar{height:3px;width:0;background:var(--gold2);transition:width .15s ease}
+.links a.active{background:var(--gold);border-color:var(--gold);color:#fff}
+.keynav a{cursor:pointer}
+.keynav a:focus,.links a:focus{outline:2px solid var(--gold2);outline-offset:2px}
+.section-title{scroll-margin-top:86px}
+
+@media(max-width:900px){h1{font-size:34px}.nav{grid-template-columns:1fr}.section-title{display:block}.section-title span{text-align:left;display:block;margin-top:8px}.grid2,.grid3,.cols,.timeline,.docs,.reader-path,.keynav,.impact-strip,.teaser-grid{grid-template-columns:1fr}.matrix{font-size:13px}.links{justify-content:flex-start}}
+@media print{.topbar,.actions,.btn{display:none}body{background:#fff}.panel,.box,.matrix,.doc,.acc{box-shadow:none}section{break-inside:avoid}.acc:not([open]) .acc-body{display:block}.footer{color:#000;background:#fff}}
+
+.matrix-pro th:nth-child(1){width:29%}.matrix-pro th:nth-child(2){width:36%}.matrix-pro th:nth-child(3){width:35%}
+.matrix-pro td:nth-child(2){color:#24384d;font-weight:500}
+.matrix-pro td{font-size:14.2px;line-height:1.48}
+@media(max-width:760px){.matrix-pro th:nth-child(1),.matrix-pro th:nth-child(2),.matrix-pro th:nth-child(3){width:auto}}
+
+.subhead{margin:24px 0 12px;color:var(--navy);font-size:18px;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:8px}.timeline.compact{grid-template-columns:repeat(5,1fr)}
+.reader-path{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:22px;align-items:stretch}
+.intro-card{background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);padding:22px;box-shadow:var(--shadow)}
+.intro-card h2{font-size:20px;margin:0 0 10px;color:var(--navy);text-transform:uppercase}.intro-card p{font-size:15.5px;line-height:1.55;margin:0;color:#263748}
+.keynav{display:grid;grid-template-columns:1fr 1fr;gap:12px}.keynav a{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);padding:15px;box-shadow:0 8px 18px rgba(0,0,0,.04);border-top:4px solid var(--gold);transition:.18s}.keynav a:hover{transform:translateY(-2px);box-shadow:0 14px 26px rgba(9,47,79,.12)}.keynav strong{display:block;color:var(--navy);font-size:14px;text-transform:uppercase;margin-bottom:6px}.keynav span{display:block;font-size:13px;line-height:1.35;color:#3b4a5a}
+.impact-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.impact{background:var(--soft);border:1px solid var(--line);padding:14px;text-align:center}.impact strong{display:block;color:var(--navy);font-size:13px;text-transform:uppercase}.impact span{display:block;color:#44515f;font-size:12.5px;line-height:1.3;margin-top:6px}
+.section-shell{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:18px}.section-shell > .lead{margin-bottom:14px}.compact-table td,.compact-table th{padding:11px 12px}.section-kicker{font-size:12px;text-transform:uppercase;color:#a9782d;font-weight:900;letter-spacing:.08em;margin-bottom:6px}
+.teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.teaser{background:var(--soft);border:1px solid var(--line);padding:14px}.teaser strong{display:block;color:var(--navy);font-size:13px;text-transform:uppercase;margin-bottom:6px}.teaser span{font-size:13px;line-height:1.35;color:#263748}
+.acc:not([open]){border-left:0}.acc:not([open]) summary{background:#fff}.acc[open]{border-color:#cdbb98}.acc[open] summary{background:linear-gradient(90deg,#fff 0%,#fbf8f1 100%)}
+
+
+.progress-wrap{position:absolute;left:0;right:0;bottom:-3px;height:3px;background:rgba(255,255,255,.10)}
+.progress-bar{height:3px;width:0;background:var(--gold2);transition:width .15s ease}
+.links a.active{background:var(--gold);border-color:var(--gold);color:#fff}
+.keynav a{cursor:pointer}
+.keynav a:focus,.links a:focus{outline:2px solid var(--gold2);outline-offset:2px}
+.section-title{scroll-margin-top:86px}
+
+@media(max-width:900px){.timeline.compact{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topbar"><nav class="nav"><div class="brand">Angélique Boulle — Dossier joint à la candidature</div><div class="links"><a href="#vision">Vision</a><a href="#posture">Posture</a><a href="#poste">Fiche de poste</a><a href="#mba">MBA</a><a href="#pac">PAC 2026-2032</a><a href="#plan">Plan d’action</a><a href="#etudes">Études</a><a href="#documents">Documents</a></div><div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div></nav></header>
+<section class="hero"><div class="wrap"><div class="eyebrow">Candidature interne — Direction juridique et commande publique</div><h1>Direction des affaires juridiques et de la commande publique</h1><p class="subtitle">Dossier joint à la candidature, conçu comme une lecture guidée : fiche de poste, PAC 2026-2032, MBA Juriste d’entreprise, plan d’action et démonstrateur juridique intégré.</p><div class="actions"><a class="btn" href="#poste">Adéquation poste</a><a class="btn alt" href="#mba">Référentiel MBA</a><a class="btn alt" href="#etudes">Étude intégrée</a></div><div class="impact-strip"><div class="impact"><strong>Sécurisation</strong><span>Actes, contrats, procédures, contentieux.</span></div><div class="impact"><strong>Pilotage</strong><span>Tableaux de bord, risques, veille, indicateurs.</span></div><div class="impact"><strong>Transversalité</strong><span>Appui aux services, élus, partenaires.</span></div><div class="impact"><strong>Commande publique</strong><span>Performance, achat responsable, suivi.</span></div></div></div></section>
+<main class="wrap">
+<section id="vision"><div class="section-title"><h2>Vue d’ensemble</h2></div><div class="reader-path"><div class="intro-card"><div class="section-kicker">Positionnement</div><h2>Un dossier construit comme une note d’aide à la décision</h2><p>La Direction des affaires juridiques et de la commande publique est présentée ici comme une fonction de sécurisation, de conseil, de pilotage et de coordination. Le dossier met en cohérence les besoins du poste, les priorités du PAC 2026-2032 et les compétences juridiques développées dans le cadre du MBA Juriste d’entreprise.</p></div><div class="keynav"><a href="#posture"><strong>1. Posture professionnelle</strong><span>Une méthode de travail centrée sur la sécurisation, l’analyse et l’aide à la décision.</span></a><a href="#poste"><strong>2. Fiche de poste</strong><span>Matrice d’adéquation entre missions attendues, compétences mobilisées et contribution opérationnelle.</span></a><a href="#mba"><strong>3. MBA Juriste</strong><span>Quatre blocs présentés en accordéons, avec applications concrètes pour la direction.</span></a><a href="#pac"><strong>4. PAC 2026-2032</strong><span>Contribution possible de la direction juridique aux orientations de mandat.</span></a></div></div></section>
+<section id="posture">
+  <div class="section-title"><h2>Posture professionnelle</h2></div>
+  <div class="panel">
+    <p class="lead">Ma posture repose sur une logique simple : analyser objectivement les situations, sécuriser les décisions, rendre le droit compréhensible pour les services et contribuer à un pilotage juridique fiable, utile et opérationnel.</p>
+    <div class="teaser-grid">
+      <div class="teaser"><strong>Analyser avant de conclure</strong><span>Qualifier les faits, identifier les textes applicables, distinguer les éléments établis des interprétations et documenter le raisonnement.</span></div>
+      <div class="teaser"><strong>Sécuriser sans bloquer</strong><span>Rechercher des solutions juridiquement solides, proportionnées aux enjeux et compatibles avec la conduite des projets publics.</span></div>
+      <div class="teaser"><strong>Conseiller avec clarté</strong><span>Transformer une analyse juridique en avis compréhensible, utile à la décision et directement exploitable par les directions métiers.</span></div>
+    </div>
+    <table class="matrix compact-table matrix-pro">
+      <thead><tr><th>Principe de travail</th><th>Traduction concrète</th><th>Intérêt pour la direction</th></tr></thead>
+      <tbody>
+        <tr><td>Objectiver les risques</td><td>Identifier les zones de vigilance, hiérarchiser les risques et proposer des scénarios d’action motivés.</td><td>Aider la Direction générale, les élus et les services à décider avec une vision claire des conséquences juridiques.</td></tr>
+        <tr><td>Structurer les procédures</td><td>Clarifier les circuits, les responsabilités, les étapes de validation, la traçabilité et les points de contrôle.</td><td>Renforcer la sécurité des actes, la qualité documentaire et l’homogénéité des pratiques.</td></tr>
+        <tr><td>Accompagner les services</td><td>Adopter une posture de conseil, de pédagogie et de coordination, sans se limiter à un contrôle juridique formel.</td><td>Faire de la direction juridique un appui aux projets, à la commande publique et à l’organisation mutualisée.</td></tr>
+        <tr><td>Piloter dans la durée</td><td>Développer une veille, des tableaux de bord, des indicateurs et un suivi documenté des dossiers sensibles.</td><td>Installer un pilotage lisible de l’activité juridique, des contentieux, des risques et des priorités.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="poste">
+  <div class="section-title"><h2>Adéquation avec la fiche de poste</h2></div><table class="matrix matrix-pro">
+    <thead>
+      <tr>
+        <th>Missions et attendus de la fonction</th>
+        <th>Compétences mobilisées</th>
+        <th>Contribution opérationnelle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Stratégie d’achat responsable et performance de la commande publique</td>
+        <td>MBA Bloc 2 — pilotage stratégique, performance de la fonction juridique, sourcing, négociation, massification et sécurisation des achats à l’échelle mutualisée.</td>
+        <td>Structurer les procédures d’achat, sécuriser les étapes de passation, renforcer la performance économique et contribuer à la bonne utilisation des deniers publics.</td>
+      </tr>
+      <tr>
+        <td>Sécurisation des actes administratifs et des procédures internes</td>
+        <td>MBA Blocs 1 et 2 — fondamentaux du droit, méthode d’analyse juridique, gouvernance, conformité, contrôle interne et qualité documentaire.</td>
+        <td>Fiabiliser les actes, renforcer les circuits de validation, améliorer la traçabilité et sécuriser les décisions administratives sur le fond comme sur la forme.</td>
+      </tr>
+      <tr>
+        <td>Conseil aux services, aux élus et aide à la décision</td>
+        <td>MBA Bloc 3 — conseil juridique opérationnel, analyse des problématiques, formulation de recommandations, communication juridique et pédagogie auprès des non-juristes.</td>
+        <td>Produire des avis clairs, proposer des scénarios d’action motivés et accompagner les services dans la réussite de leurs projets.</td>
+      </tr>
+      <tr>
+        <td>Litiges, précontentieux, contentieux, assurances et sinistres</td>
+        <td>MBA Bloc 4 — cartographie des risques, gestion des précontentieux, modes amiables de règlement des différends, stratégie contentieuse et suivi des dossiers sensibles.</td>
+        <td>Mettre en place un suivi documenté des contentieux, anticiper les risques, sécuriser les réponses et structurer les relations avec les conseils, assureurs et partenaires.</td>
+      </tr>
+      <tr>
+        <td>Veille juridique et diffusion d’une culture juridique commune</td>
+        <td>MBA Blocs 2 et 3 — veille réglementaire, LegalTech, formalisation des connaissances, formation interne et accompagnement des directions métiers.</td>
+        <td>Organiser une veille ciblée, diffuser des alertes utiles, développer des actions de sensibilisation et rendre le droit plus accessible aux services.</td>
+      </tr>
+      <tr>
+        <td>Management de la direction et pilotage de l’activité</td>
+        <td>MBA Bloc 3 — management d’équipe, fixation d’objectifs, conduite du changement, résolution des conflits, suivi d’activité et gestion des priorités.</td>
+        <td>Clarifier l’organisation, soutenir la montée en compétences des agents, installer des indicateurs de suivi et garantir un fonctionnement lisible de la direction.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section id="mba"><div class="section-title"><h2>Référentiel MBA Juriste d’entreprise</h2></div><div class="note"><p><strong>Formation en cours — STUDI :</strong> l’attestation confirme le suivi du MBA Juriste d’entreprise 2025, pour une durée totale de 450 heures, avec accès à la plateforme de formation à distance. Ce dossier valorise la formation comme un levier de montée en compétence, sans la présenter comme un diplôme déjà obtenu.</p></div><div class="accordion">
+<details class="acc"><summary><div><span class="acc-title">Bloc 1 — Fondamentaux du droit</span><span class="acc-sub">Socle juridique, raisonnement, qualification et sécurisation.</span></div><span class="plus">+</span></summary><div class="acc-body"><div class="cols"><div class="mini"><h4>Compétences développées</h4><ul><li>Identifier les sources applicables et la hiérarchie des normes.</li><li>Qualifier juridiquement une situation.</li><li>Mobiliser droit civil, droit social, droit administratif et responsabilité.</li><li>Structurer une analyse juridique argumentée.</li></ul></div><div class="mini"><h4>Application au poste</h4><ul><li>Sécurisation des actes et décisions.</li><li>Lecture critique des documents et procédures.</li><li>Rédaction de notes juridiques.</li><li>Appui à l’interprétation des textes pour les services.</li></ul></div></div></div></details>
+<details class="acc"><summary><div><span class="acc-title">Bloc 2 — Pilotage stratégique et opérationnel de la fonction juridique</span><span class="acc-sub">Gouvernance, conformité, audit, LegalTech, stratégie et pilotage.</span></div><span class="plus">+</span></summary><div class="acc-body"><div class="cols"><div class="mini"><h4>Compétences développées</h4><ul><li>Organiser une fonction juridique.</li><li>Piloter la conformité et la gestion documentaire.</li><li>Mettre en œuvre des outils de suivi, de reporting et de veille.</li><li>Analyser les risques et structurer un plan d’actions.</li></ul></div><div class="mini"><h4>Application au poste</h4><ul><li>Évaluation de l’activité juridique de la direction.</li><li>Cartographie des risques de la collectivité.</li><li>Tableaux de bord des contentieux.</li><li>Commande publique : méthode, performance, suivi et sécurisation.</li></ul></div></div></div></details>
+<details class="acc"><summary><div><span class="acc-title">Bloc 3 — Accompagnement juridique et animation de la direction</span><span class="acc-sub">Conseil aux directions, management, pédagogie et conduite du changement.</span></div><span class="plus">+</span></summary><div class="acc-body"><div class="cols"><div class="mini"><h4>Compétences développées</h4><ul><li>Conseiller la direction et les collaborateurs.</li><li>Présenter des recommandations accessibles.</li><li>Animer une équipe juridique et transverse.</li><li>Concevoir des actions de sensibilisation et de formation.</li></ul></div><div class="mini"><h4>Application au poste</h4><ul><li>Accompagnement des services de l’organisation mutualisée.</li><li>Diffusion d’une culture juridique commune.</li><li>Conseil orienté solution sur les projets stratégiques.</li><li>Animation, coordination et montée en compétence des agents.</li></ul></div></div></div></details>
+<details class="acc"><summary><div><span class="acc-title">Bloc 4 — Gestion des précontentieux et contentieux</span><span class="acc-sub">Risques, preuves, stratégie contentieuse, MARD et suivi des litiges.</span></div><span class="plus">+</span></summary><div class="acc-body"><div class="cols"><div class="mini"><h4>Compétences développées</h4><ul><li>Identifier, évaluer et hiérarchiser les risques de contentieux.</li><li>Gérer les précontentieux, mises en demeure et transactions.</li><li>Mobiliser les modes alternatifs de règlement des différends.</li><li>Suivre les procédures et voies de recours.</li></ul></div><div class="mini"><h4>Application au poste</h4><ul><li>Suivi des litiges, contentieux, sinistres et indemnisations.</li><li>Tableau de bord des dossiers sensibles.</li><li>Prévention des risques par archivage et traçabilité.</li><li>Stratégie de réponse et coordination avec les partenaires.</li></ul></div></div></div></details>
+</div></section>
+<section id="pac"><div class="section-title"><h2>Contribution au PAC 2026-2032</h2></div><table class="matrix compact-table"><thead><tr><th>Orientation du PAC</th><th>Contribution de la direction juridique</th><th>Effet recherché</th></tr></thead><tbody><tr><td>Une mairie plus simple, plus lisible et plus proche</td><td>Procédures clarifiées, modèles communs, réponses juridiques accessibles aux services.</td><td>Meilleure lisibilité interne, sécurisation des circuits et gain de temps.</td></tr><tr><td>Gérer avec sérieux et investir avec ambition</td><td>Sécurisation des marchés, suivi des engagements, vigilance sur les risques contractuels et financiers.</td><td>Protéger les ressources publiques et fiabiliser les projets d’investissement.</td></tr><tr><td>Transformer et embellir la ville</td><td>Appui juridique aux projets, contrats, assurances, partenaires et procédures administratives.</td><td>Accélérer les projets sans fragiliser leur sécurité juridique.</td></tr><tr><td>Services publics fiables et équipements utiles</td><td>Commande publique sécurisée, suivi des procédures et anticipation des contentieux.</td><td>Garantir la continuité et la qualité du service rendu.</td></tr></tbody></table></section>
+<section id="plan"><div class="section-title"><h2>Plan d’action de prise de fonction</h2></div><div class="timeline"><div class="t"><strong>30 jours</strong><p>Prendre connaissance des dossiers, circuits, outils, échéances, marchés sensibles, contentieux et priorités des services.</p></div><div class="t"><strong>90 jours</strong><p>Stabiliser les procédures prioritaires, identifier les risques majeurs, proposer un format de veille et de tableau de bord.</p></div><div class="t"><strong>180 jours</strong><p>Déployer une cartographie des risques, harmoniser les modèles, structurer les indicateurs de suivi et les points de contrôle.</p></div><div class="t"><strong>365 jours</strong><p>Installer un pilotage durable : reporting, culture juridique partagée, plan de sensibilisation et amélioration continue des pratiques.</p></div></div></section>
+
+<section id="etudes">
+  <div class="section-title"><h2>Études et démonstrateurs juridiques</h2></div><div class="panel">
+    <p class="lead">Cette section intègre directement l’étude méthodologique réalisée à partir d’un dossier contentieux complexe, présentée sous une forme anonymisée et strictement démonstrative.</p><div class="teaser-grid"><div class="teaser"><strong>Ce que l’étude montre</strong><span>Capacité à structurer une masse documentaire, reconstituer une chronologie et distinguer faits, preuves et interprétations.</span></div><div class="teaser"><strong>Compétence démontrée</strong><span>Analyse juridique, audit documentaire, raisonnement probatoire et production d’une synthèse d’aide à la décision.</span></div><div class="teaser"><strong>Intérêt pour le poste</strong><span>Précontentieux, contentieux, suivi des dossiers sensibles, cartographie des risques et sécurisation des décisions.</span></div></div>
+
+    <details class="acc">
+      <summary>
+        <div>
+          <span class="acc-title">Étude méthodologique — Analyse d’un dossier contentieux complexe</span>
+          <span class="acc-sub">Audit documentaire • Analyse juridique • Analyse probatoire • Aide à la décision</span>
+        </div>
+        <span class="plus">+</span>
+      </summary>
+      <div class="acc-body">
+        <div class="note">
+          <p><strong>Cadre de l’étude :</strong> cette étude constitue un démonstrateur de compétences. Elle ne constitue ni une consultation juridique, ni une expertise judiciaire, ni un mémoire contentieux, ni un projet de recours. Toutes les informations permettant l’identification de l’affaire, des personnes, des collectivités, des juridictions ou des références administratives ont été supprimées, adaptées ou anonymisées.</p>
+        </div>
+
+        <div class="cols">
+          <div class="mini">
+            <h4>Objectif professionnel</h4>
+            <p>Présenter une méthode de traitement d’un dossier juridique sensible : reconstitution chronologique, lecture croisée des pièces, identification des éléments probatoires et production d’une synthèse d’aide à la décision.</p>
+          </div>
+          <div class="mini">
+            <h4>Positionnement</h4>
+            <p>L’étude illustre une posture d’analyse neutre, rigoureuse et confidentielle, centrée sur les faits, les pièces, les risques et les zones de vigilance nécessitant, le cas échéant, une validation par un professionnel habilité.</p>
+          </div>
+        </div>
+
+        <h3 class="subhead">Méthodologie retenue</h3>
+        <div class="timeline compact">
+          <div class="t"><strong>1. Inventaire</strong><p>Classement des pièces communiquées et identification de leur nature : administratives, disciplinaires, juridictionnelles et probatoires.</p></div>
+          <div class="t"><strong>2. Chronologie</strong><p>Reconstitution de la procédure et des faits dans une logique séquentielle pour clarifier l’enchaînement des décisions et des événements.</p></div>
+          <div class="t"><strong>3. Lecture croisée</strong><p>Confrontation des documents entre eux afin d’identifier les convergences, divergences, incohérences ou zones d’incertitude.</p></div>
+          <div class="t"><strong>4. Analyse probatoire</strong><p>Repérage des pièces déterminantes dans la construction du raisonnement et distinction entre faits établis, hypothèses et interprétations.</p></div>
+          <div class="t"><strong>5. Synthèse</strong><p>Production d’un document structuré permettant une lecture claire du dossier avant toute éventuelle analyse contentieuse spécialisée.</p></div>
+        </div>
+
+        <h3 class="subhead">Compétences mobilisées</h3>
+        <table class="matrix compact-table">
+          <thead>
+            <tr>
+              <th>Compétence</th>
+              <th>Application dans l’étude</th>
+              <th>Intérêt pour la direction juridique</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Analyse documentaire complexe</td>
+              <td>Classement, tri et lecture croisée d’un corpus volumineux et sensible.</td>
+              <td>Structurer des dossiers juridiques, contentieux, assurantiels ou contractuels nécessitant une traçabilité forte.</td>
+            </tr>
+            <tr>
+              <td>Raisonnement juridique</td>
+              <td>Reconstruction du raisonnement suivi à partir des décisions et pièces disponibles.</td>
+              <td>Produire des notes d’analyse utiles à la Direction générale, aux élus et aux services.</td>
+            </tr>
+            <tr>
+              <td>Analyse probatoire</td>
+              <td>Identification des pièces déterminantes, des éléments établis et des zones d’incertitude.</td>
+              <td>Sécuriser les réponses en précontentieux, contentieux, sinistres ou dossiers sensibles.</td>
+            </tr>
+            <tr>
+              <td>Gestion des risques</td>
+              <td>Repérage des points de vigilance pouvant justifier une analyse complémentaire.</td>
+              <td>Alimenter une cartographie des risques et des tableaux de suivi contentieux.</td>
+            </tr>
+            <tr>
+              <td>Aide à la décision</td>
+              <td>Synthèse structurée permettant une lecture claire avant arbitrage ou orientation spécialisée.</td>
+              <td>Faciliter les arbitrages de la direction, prioriser les actions et documenter les choix.</td>
+            </tr>
+            <tr>
+              <td>Confidentialité et posture</td>
+              <td>Anonymisation, prudence rédactionnelle, neutralité et respect strict des limites d’intervention.</td>
+              <td>Garantir une posture professionnelle adaptée aux dossiers sensibles d’une collectivité.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subhead">Correspondance avec la fiche de poste</h3>
+        <table class="matrix compact-table">
+          <thead>
+            <tr>
+              <th>Attendus de la fonction</th>
+              <th>Apport démontré par l’étude</th>
+              <th>Contribution opérationnelle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Produire des analyses juridiques et des notes d’aide à la décision</td>
+              <td>Structuration d’un dossier complexe, hiérarchisation des faits et formalisation d’une synthèse exploitable.</td>
+              <td>Éclairer la Direction générale, le Directeur de pôle et les élus sur les dossiers sensibles.</td>
+            </tr>
+            <tr>
+              <td>Analyser les risques juridiques</td>
+              <td>Identification des zones de vigilance, distinction entre constats établis et points à approfondir.</td>
+              <td>Sécuriser les arbitrages, prévenir les fragilités et renforcer la traçabilité des décisions.</td>
+            </tr>
+            <tr>
+              <td>Suivre les contentieux et dossiers sensibles</td>
+              <td>Reconstitution chronologique, lecture des décisions et analyse des éléments probatoires.</td>
+              <td>Organiser un suivi lisible des contentieux, sinistres, demandes d’indemnisation et dossiers transversaux.</td>
+            </tr>
+            <tr>
+              <td>Diffuser une culture juridique et documentaire</td>
+              <td>Méthode reproductible : classement, contrôle, synthèse, distinction faits / interprétations.</td>
+              <td>Installer des pratiques communes de traitement documentaire et de sécurisation des procédures.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          <p><strong>Conclusion intégrée :</strong> cette étude illustre une capacité à traiter un dossier juridique sensible avec méthode, recul et prudence. Elle démontre une aptitude à organiser l’information, reconstruire une chronologie, identifier les éléments probatoires utiles, formuler des zones de vigilance et produire un support d’aide à la décision exploitable dans un environnement de direction.</p>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="documents"><div class="section-title"><h2>Documents liés au dossier</h2></div><div class="docs"><div class="doc"><h3>Fiche de poste</h3><p>Document de référence pour les missions, compétences et responsabilités attendues.</p><a class="btn alt" href="affaires juridiques - commande publique.pdf" target="_blank">Ouvrir le PDF</a><details class="pdfbox"><summary>Afficher l’aperçu intégré</summary><iframe src="affaires juridiques - commande publique.pdf" title="Fiche de poste"></iframe></details></div><div class="doc"><h3>PAC 2026-2032</h3><p>Document d’orientation permettant d’aligner la contribution de la direction avec le projet de mandat.</p><a class="btn alt" href="PAC_Brochure_2026_2032.pdf" target="_blank">Ouvrir le PDF</a><details class="pdfbox"><summary>Afficher l’aperçu intégré</summary><iframe src="PAC_Brochure_2026_2032.pdf" title="PAC 2026-2032"></iframe></details></div><div class="doc"><h3>Attestation MBA</h3><p>Attestation de formation continue — MBA Juriste d’entreprise en cours.</p><a class="btn alt" href="Attestation_Formation_BOULLE_MBA Juriste d'entreprise 2025__JUIN 2027.pdf" target="_blank">Ouvrir le PDF</a><details class="pdfbox"><summary>Afficher l’aperçu intégré</summary><iframe src="Attestation_Formation_BOULLE_MBA Juriste d'entreprise 2025__JUIN 2027.pdf" title="Attestation MBA"></iframe></details></div></div></section>
+</main><footer class="footer">Angélique Boulle — Dossier d’appui à la candidature — Direction des affaires juridiques et de la commande publique</footer>
+
+<script>
+(function(){
+  const links = Array.from(document.querySelectorAll('.links a'));
+  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const progress = document.getElementById('progressBar');
+  function setActive(){
+    let current = sections[0];
+    const offset = (document.querySelector('.topbar')?.getBoundingClientRect().height || 0) + 40;
+    for(const section of sections){
+      if(section.getBoundingClientRect().top - offset <= 0){ current = section; }
+    }
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current.id));
+    if(progress){
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = height > 0 ? (scrollTop / height) * 100 : 0;
+      progress.style.width = Math.min(100, Math.max(0, pct)) + '%';
+    }
+  }
+  links.forEach(a => a.addEventListener('click', function(e){
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target){
+      e.preventDefault();
+      const header = document.querySelector('.topbar');
+      const headerH = header ? header.getBoundingClientRect().height : 0;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - headerH - 10;
+      window.scrollTo({top:y, behavior:'smooth'});
+      history.replaceState(null, '', this.getAttribute('href'));
+    }
+  }));
+  document.querySelectorAll('.keynav a,.actions a').forEach(a => a.addEventListener('click', function(e){
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target){
+      e.preventDefault();
+      const header = document.querySelector('.topbar');
+      const headerH = header ? header.getBoundingClientRect().height : 0;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - headerH - 10;
+      window.scrollTo({top:y, behavior:'smooth'});
+      history.replaceState(null, '', this.getAttribute('href'));
+    }
+  }));
+  window.addEventListener('scroll', setActive, {passive:true});
+  window.addEventListener('resize', setActive);
+  setActive();
+})();
+</script>
+</body></html>
